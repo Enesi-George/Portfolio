@@ -8,6 +8,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import {Link} from 'react-router-dom';
+import MyProfileaImage from '../logos/facedeep.jpg';
+
 
 
 const Wrapper = styled(Box)(({ theme }) => ({
@@ -89,7 +91,7 @@ const HomePage = () => {
         <Grid item xs={12} md={6}>
             <Media
               component="img"
-              src="src\logos\facedeep.jpg" // Replace with your image URL
+              src={MyProfileaImage} 
               alt="Card Image"
             />
           </Grid>

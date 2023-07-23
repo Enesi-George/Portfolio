@@ -4,7 +4,7 @@
   font-weight: 400;
   color:'black';
   color: rgba(255, 255, 255, 0.87);
-  background-image:url('src/logos/bg1.jpg');
+  /* background-image:url(src/logos/bg1.jpg); */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

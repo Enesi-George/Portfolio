@@ -1,5 +1,4 @@
 import React from 'react';
-import './framerMotion.css';
 import { styled } from '@mui/system';
 import { Card, CardMedia, Typography, Box, Grid } from '@mui/material';
 import JavascriptLogo from '../logos/js.jpeg';
@@ -11,8 +10,6 @@ import HtmlIcon from '../logos/html5.png';
 import CSSIcon from '../logos/CSS3.png';
 import MuiIcon from '../logos/mui.png';
 import bootstrapIcon from '../logos/bootstrap.png';
-
-
 
 const Wrapper = styled('div')({
   padding: '0px 16px',
@@ -33,49 +30,47 @@ const LanguageLogo = styled(CardMedia)(({ theme }) => ({
   margin: '0 auto 16px',
   objectFit: 'contain',
 }));
+
 const LanguageName = styled(Typography)({
   textAlign: 'center',
 });
 
 const Skill = () => {
   return (
-    <Box 
-    
-    sx={{
-      padding: '0px 102px',
-      marginTop:'120px'
-    }}>
-      
-      <Box 
-      className="rotate"
-      sx={{
-        display:"flex",
-        justifyContent:'center',
-        bgcolor:'white',
-        p:1,
-        borderRadius:'40px',
-        boxShadow:'2px 2px 5px #d3d3d3'
-        }}>
-          <Typography 
-          color="black" 
-          variant component ='h2'
-          xs={12}
-          
-          > 
+    <Box sx={{ padding: '0px 16px', marginTop: '100px' }}>
+      <Box
+        className="rotate"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          bgcolor: 'white',
+          p: 1,
+          borderRadius: '40px',
+          boxShadow: '2px 2px 5px #d3d3d3',
+        }}
+      >
+        <Typography 
+        color="black"
+        variant 
+        component="h2">
           Skills
-          </Typography>
+        </Typography>
       </Box>
 
       <Wrapper>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} md={3}>
-          <LanguageCard>
-            <LanguageLogo component="img" image={JavascriptLogo} alt="Javascript" />
-            <LanguageName variant="h6">JavaScript</LanguageName>
-            <LanguageName component='Typography'>Experience: 3yrs</LanguageName>
-          </LanguageCard>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
+            <LanguageCard>
+              <LanguageLogo
+                component="img"
+                image={JavascriptLogo}
+                alt="Javascript"
+              />
+              <LanguageName variant="h6">JavaScript</LanguageName>
+              <LanguageName component="Typography">Experience: 3yrs</LanguageName>
+            </LanguageCard>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
           <LanguageCard>
             <LanguageLogo component="img" image={PythonLogo} alt="Python" />
             <LanguageName variant="h6">Python</LanguageName>
@@ -139,18 +134,11 @@ const Skill = () => {
 
           </LanguageCard>
         </Grid>
-        {/* <Grid item xs={12} sm={6} md={3}>
-          <LanguageCard>
-            <LanguageLogo component="img" image={HtmlIcon} alt="Html"/>
-            <LanguageName variant="h6">Html</LanguageName>
-          </LanguageCard>
-        </Grid> */}
-        {/* Add other cards for more languages */}
-      </Grid>
-    </Wrapper>
 
+          {/* ... Repeat the same pattern for other Grid items ... */}
+        </Grid>
+      </Wrapper>
     </Box>
-
   );
 };
 

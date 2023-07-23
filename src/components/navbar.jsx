@@ -10,6 +10,8 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import {Link} from 'react-router-dom';
+import PortfolioBag from '../logos/portfolio.png';
+
 
 
 function ResponsiveAppBar() {
@@ -58,7 +60,7 @@ function ResponsiveAppBar() {
            padding:'0px 78px'
         }}>
           <Typography sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} >  
-            <img src='src\logos\portfolio.png' 
+            <img src={PortfolioBag} 
             width={40} 
             height={30}
             />
@@ -66,8 +68,8 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="src/logos/portfolio.png"
+            component={Link}
+            to="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -133,7 +135,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Typography sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} >  
-            <img src='' 
+            <img src={PortfolioBag} 
             width={40} 
             height={30}
             />
@@ -141,8 +143,8 @@ function ResponsiveAppBar() {
           <Typography
             variant="italic"
             noWrap
-            component="a"
-            href="/"
+            component={Link}
+            to="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
