@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import ResponsiveCard from './pages/homepage';
 import Skill from './pages/skill';
 import ResponsiveAppBar from './components/navbar';
 import Box from '@mui/material/Box';

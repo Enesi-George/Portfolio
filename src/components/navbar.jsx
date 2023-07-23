@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
            padding:'0px 78px'
         }}>
           <Typography sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} >  
-            <img src='src\assets\portfolio.png' 
+            <img src='src\logos\portfolio.png' 
             width={40} 
             height={30}
             />
@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="src/logos/portfolio.png"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -133,7 +133,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Typography sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} >  
-            <img src='src\assets\portfolio.png' 
+            <img src='' 
             width={40} 
             height={30}
             />

@@ -2,12 +2,13 @@ import React from 'react';
 import './framerMotion.css';
 import { styled, useTheme } from '@mui/system';
 import { Card, CardContent, CardMedia, Typography, Box, Paper, IconButton, Tooltip, Button, Grid } from '@mui/material';
-import { motion } from 'framer-motion';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import {Link} from 'react-router-dom';
+
 
 const Wrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -88,7 +89,7 @@ const HomePage = () => {
         <Grid item xs={12} md={6}>
             <Media
               component="img"
-              src="src\assets\facedeep.jpg" // Replace with your image URL
+              src="src\logos\facedeep.jpg" // Replace with your image URL
               alt="Card Image"
             />
           </Grid>
@@ -100,6 +101,8 @@ const HomePage = () => {
               <Typography variant='h6'>and Marine Engineer</Typography>
               <Item>
                 <Button
+                component={Link}
+                to="/about"
                   sx={{
                     textTransform: 'capitalize',
                     px: 3,
